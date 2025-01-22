@@ -75,12 +75,20 @@ nav ul li a:hover {
 /*Image Gallery styles and transitions*/
 
 img:hover {
+    right: 100 px;
     transform: scale(1.1); /*The Zoom affect when you hover over an image*/
     transition-duration: 0.9s;
 
 }
-
 /*Footer*/
+
+.description:hover {
+    color: brown;
+    right: 100 px;
+    transform: scale(1.02); /*The Zoom affect when you hover over an image*/
+    transition-duration: 0.7s;
+
+}
 
 footer {
     background-color: grey;
