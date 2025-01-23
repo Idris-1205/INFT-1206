@@ -70,25 +70,34 @@ nav ul li a:hover {
 
 }
 
+/* Container to center items */
+.container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    gap: 20px; /* Space between items */
+}
 
 
 /*Image Gallery styles and transitions*/
 
-img:hover {
-    right: 100 px;
-    transform: scale(1.2); /*The Zoom affect when you hover over an image*/
-    transition-duration: 0.9s;
-
+.item {
+    display: flex;
+    padding: 10px;
+    border: 10px solid black;
+    background-color: black;
+    transition: transform 0.9s;
 }
+
+
+.item:hover .image-container img, 
+.item:hover .description {
+    transform: scale(1.02); /* Applies zoom effect for both image and description */
+    transition: transform 0.9s; /* Adds transition time of 0.9 seconds */
+}
+
 /*Footer*/
-
-.description:hover {
-    color:white;
-    right: 100 px;
-    transform: scale(1.02); /*The Zoom affect when you hover over an image*/
-    transition-duration: 0.7s;
-
-}
 
 footer {
     background-color: grey;
