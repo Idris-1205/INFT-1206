@@ -76,14 +76,14 @@ nav ul li a:hover {
 
 img:hover {
     right: 100 px;
-    transform: scale(1.1); /*The Zoom affect when you hover over an image*/
+    transform: scale(1.2); /*The Zoom affect when you hover over an image*/
     transition-duration: 0.9s;
 
 }
 /*Footer*/
 
 .description:hover {
-    color: brown;
+    color:white;
     right: 100 px;
     transform: scale(1.02); /*The Zoom affect when you hover over an image*/
     transition-duration: 0.7s;
