@@ -1,141 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mozilla splash page</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <style>
-      /* header and body setup */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla Multimedia Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 
+Author: Aidress Qadeer
+Date: February 5, 2025
+Description: A multimedia-rich Mozilla splash page featuring images, 
+videos, and structured content. The project ensures proper styling 
+and accessibility using HTML and CSS. 
+-->
 
-      html {
-        font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
-      }
+<header>
+   <!-- Logo and main heading -->
+  <img src="mozilla-logo.png" alt="mozilla-logo" class="logo">
+  <h1>Welcome to Mozilla's Multimedia Experience</h1>
+</header>
 
-      body {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        position: relative;
-      }
+<section>
+    <!-- Section about Mozilla -->
+  <h2>About Mozilla</h2>
+  <p>Mozilla is an open-source organization dedicated to keeping the web free and accessible for everyone.</p>
+  <img src="background.png" alt="Abstract Mozilla Background" width="75%">
+</section>
 
-      /* Header styling */
+<section>
+  <!-- Embedded Mozilla video -->
+  <h2>Mozilla Video</h2>
+  <iframe src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0"></iframe>
+</section>
 
-      header {
-        height: 150px;
-      }
+<Section>
+   <!-- Image gallery showcasing Mozilla logos -->
+    <h2>Mozilla Image/Logo Gallery</h2>
+    <img src="firefox-logo.png" alt="Firefox logo" width="200" height="200">
+    <img src="mozilla-dinosaur.png" alt="Mozilla Dinosaur" width="200" height="230">
+    <img src="mozilla-add-on-logo.png" alt="firefox Add-ons" width="200" height="200">
+    <img src="mdn.svg" alt="MDN Logo" width="250" height="200">
+</Section>
 
-      header img {
-        width: 100px;
-        position: absolute;
-        right: 32.5px;
-        top: 32.5px;
-      }
+<section>
+    <!-- Section featuring the red panda -->
+  <h2>Meet the Red Panda</h2>
+  <p>Mozilla chose the red panda, also known as the "firefox," as their mascot to symbolize their mission of protecting the open web. The red panda's unique and rare nature aligns with Mozilla's commitment to innovation and preserving internet accessibility.</p>
+  <picture>
+    <!-- Responsive image for different screen sizes -->
+    <source media="(max-width: 600px )" srcset="redpanda-face.png">
+    <img src="cute-panda-sitting.png" alt="A red panda" width="300">
+  </picture>
+</section>
 
-      h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
-      }
+<footer>
+  <!-- Footer with copyright information -->
+    <p>&copy; 2025 Mozilla. All rights reserved.</p>
+</footer>
 
-      /* main section and video styling */
-
-      main {
-        background: #ccc;
-      }
-
-      article {
-        padding: 20px;
-      }
-
-      h2 {
-        margin-top: 0;
-      }
-
-      p {
-        line-height: 2;
-      }
-
-      iframe {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 100%;
-      }
-
-      /* further info links */
-
-      .further-info {
-        clear: left;
-        padding: 40px 0;
-        background: #c13832;
-        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
-                    inset 0 -3px 2px rgba(0,0,0,0.5);
-      }
-
-      .further-info a {
-        width: 25%;
-        display: block;
-        float: left;
-      }
-
-      .further-info img {
-        max-width: 100%;
-      }
-
-      .clearfix {
-        clear: both;
-      }
-
-      /* Red panda image */
-
-      .red-panda img {
-        display: block;
-        max-width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-
-    </header>
-
-    <main>
-      <article>
-        <!-- insert iframe from youtube -->
-
-        <h2>Rocking the free web</h2>
-
-        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
-
-        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
-      </article>
-
-      <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
-        </a>
-        <a href="https://www.mozilla.org/">
-          <img>
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img>
-        </a>
-        <div class="clearfix"></div>
-      </div>
-
-      <div class="red-panda">
-        <!-- insert picture element -->
-      </div>
-
-    </main>
-  </body>
+</body>
 </html>
